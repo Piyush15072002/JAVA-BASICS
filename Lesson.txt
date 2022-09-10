@@ -1,0 +1,32 @@
+1. Download JDK - JAVA DEVELOPMENT KIT
+
+2. There are two types of function in java
+    a. ReturnType - Which returns a value
+    b. Void - Which do not return anything
+
+3. The main() is the entry point to the program
+
+4. All functions should belong to a CLASS
+    A CLASS is a function for one of more related function
+
+5. Every JAVA program should have atleast one class which contains the main() function in it,
+This is the 'class Main()' which is a class that holds the main() function
+
+class Main{
+    void main(){
+        ...
+    }
+}
+
+6. There are access modifiers in JAVA which are special keywords that determines if other classes can access this class or not
+and there are few like - PUBLIC, PRIVATE, ETC
+But for now, we will use the Public
+
+public class Main{
+    public void main(){
+        ...
+    }
+}
+
+# The "Pascal" naming convention is used when we name a class that is why in 'class Main()' 
+the Main is capital, The "Pascal" naming convention is "SonGokuIsBest"
