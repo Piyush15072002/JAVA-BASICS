@@ -30,3 +30,16 @@ public class Main{
 
 # The "Pascal" naming convention is used when we name a class that is why in 'class Main()' 
 the Main is capital, The "Pascal" naming convention is "SonGokuIsBest"
+# To name our function, we use "camelCase"
+
+7. To run your JAVA file without the IDE
+Go to the same directory where file is present
+> javac <name of file>.java
+eg. > javac App.java
+
+This will run your source code
+
+8. The anatomy of the JAVA program is that
+App.java is the main file which contains the source code
+App.class is the file that contains the BYTE CODE, it is the compiled form of the .java file
+
