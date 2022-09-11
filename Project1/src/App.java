@@ -1,6 +1,11 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
-        System.out.println("This is my first JAVA program");
+
+        // * Print
+        // System.out.println("Hello, World!");
+        // System.out.println("This is my first JAVA program");
+
+        int powerLevel = 100000;
+        System.out.println(powerLevel);
     }
 }

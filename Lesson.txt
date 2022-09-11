@@ -37,9 +37,25 @@ Go to the same directory where file is present
 > javac <name of file>.java
 eg. > javac App.java
 
-This will run your source code
+This will COMPILE your source code
 
 8. The anatomy of the JAVA program is that
 App.java is the main file which contains the source code
 App.class is the file that contains the BYTE CODE, it is the compiled form of the .java file
 
+9. BEHIND THE SCENES 
+Two things happen when we run our program, COMPILATION and EXECUTION
+
+The .java file (source code) is compiled by java compiler (which we got from JDK) into a .class file (BYTE CODE)
+
+The JAVA BYTE CODE that we have is "Platform Independent" means it can run on any machine that has JRE (Java Runtime Environment)
+This JRE has a component called as JVM (JAVA VIRTUAL MACHINE) which takes the BYTE CODE and execute it into the NATIVE CODE (windows, mac, etc)
+
+.'. Source code ---> JDK (Java Compiler [javac]) ---> Byte Code
+    Byte code ---> JVM ---> Native Code
+
+=> To run your byte code from CMD 
+> java <filename>
+
+
+10. JAVA was developed by James Gosling in 1995
