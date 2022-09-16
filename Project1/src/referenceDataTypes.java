@@ -66,5 +66,3 @@ public class referenceDataTypes {
 // ! Always remember that the reference type comes with objects that we can
 // access inside like with date and point, just remember to use the NEW keyword
 // and the package it came from
-
-//
