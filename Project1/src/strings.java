@@ -18,6 +18,14 @@ public class strings {
         System.out.println(message);
         System.out.println(who);
 
+        // since th string is a reference type, so it comes with various methods with it
+
+        System.out.println(who.length());
+
+        System.out.println(who.replace("Goku", "goku"));
+
+        // ! Escape Sequences in JAVA
+
     }
 
 }
