@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Array {
     public static void main(String[] args) throws Exception {
 
@@ -20,5 +22,32 @@ public class Array {
 
         // this will just print the address of the memory
         System.out.println(fightersPower);
+
+        // but how can u see the actual items in the arrays
+        // to do that, there is a class in JAVA that allows us called as "Array" which
+        // comes under the java.utils, this class comes with many methods as well
+
+        System.out.println(Arrays.toString(fightersPower));
+
+        // ! Another way to make an array is
+
+        int[] age = { 21, 22, 22, 25, 25 };
+
+        // to know its length
+        System.out.println(age.length);
+
+        // To sort
+
+        Arrays.sort(age);
+
+        System.out.println(Arrays.toString(age));
+
+        // ! Multidimensional Arrays
+
+        // 2 D array (Matrix)
+
+        int[][] area = new int[3][3]; // 3x3 matrix
+
+        System.out.println(Arrays.toString(area));
     }
 }
