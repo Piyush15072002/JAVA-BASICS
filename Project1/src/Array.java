@@ -48,6 +48,43 @@ public class Array {
 
         int[][] area = new int[3][3]; // 3x3 matrix
 
+        // if you print this 2D array, u will just get the address and not the actual
+        // data
         System.out.println(Arrays.toString(area));
+
+        // using this, u can print the 2d array
+        System.out.println(Arrays.deepToString(area));
+
+        // to add the values
+        area[0][0] = 100;
+        area[1][1] = 100;
+        area[2][2] = 100;
+
+        System.out.println(Arrays.deepToString(area));
+
+        // Another way to make the array
+
+        int[][] subMarks = {
+                {
+                        100, 70
+                },
+                {
+                        90, 80, 50, 60
+                }
+        };
+
+        System.out.println(Arrays.deepToString(subMarks));
+
+        // 3d array
+
+        int[][][] house = new int[5][5][5];
+
+        house[0][0][0] = 100;
+        house[1][1][1] = 100;
+        house[2][2][2] = 100;
+
+        // to print
+        System.out.println(Array.deepToString(house));
+
     }
 }
