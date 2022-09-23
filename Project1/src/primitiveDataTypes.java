@@ -10,7 +10,7 @@ public class primitiveDataTypes {
         // byte store in 1 bytes [-128, 127]
         // short store in 2 bytes [-32k, 32k]
         // int store in 4 bytes [-2B, 2B]
-        // long store in 8 bytes [-2B, 2B]
+        // long store in 8 bytes
 
         // for Decimal values
         // float store in 4 bytes

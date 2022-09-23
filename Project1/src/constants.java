@@ -9,5 +9,6 @@ public class constants {
 
         // pi = 100; now we cannot change this
 
+        System.out.println(pi);
     }
 }

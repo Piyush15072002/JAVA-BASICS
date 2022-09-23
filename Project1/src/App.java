@@ -1,4 +1,5 @@
 public class App {
+    // The name of the class should be exactly like the name of the file
     public static void main(String[] args) throws Exception {
 
         // * Print
