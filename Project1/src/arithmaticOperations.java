@@ -101,5 +101,24 @@ public class arithmaticOperations {
 
         // ! Parsing
 
+        // lets say i wanna add a string and a number then i will use the Integer
+        // package and its function parseInt
+
+        String numb = "99";
+
+        int sum = Integer.parseInt(numb) + 1;
+
+        System.out.println(sum); // 100
+
+        // same way
+
+        numb = "99.1"; // double but in string
+        // remember that in JAVA, all decimal numbers are automatically DOUBLE, if u
+        // wanna make them float, use the f
+
+        double summ = Double.parseDouble(numb) + 0.9;
+
+        System.out.println(summ);
+
     }
 }
