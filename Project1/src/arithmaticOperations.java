@@ -29,5 +29,46 @@ public class arithmaticOperations {
         double divss = (double) 1000 / (double) 3;
         System.out.println(divss); // this gives us 333.33333 , so it's correct way
 
+        // Increment and decrement
+
+        // remember that short stores value between -32k to 32k (32767)
+        short y = 31999;
+        y++; // post fix
+
+        ++y; // pre fix
+        System.out.println(y);
+
+        // ! FUN ACTIVITY
+
+        // like i researched, they said till 32k but its at 32767
+        // after this if we add more, it will go back to negative value
+        short x = 32767; // after 32767, it gives error for short
+        x++;
+        System.out.println(x); // answer should be 32768 but since it is short
+        // so this is answer -32768
+
+        // lets understand the postfix and prefix
+
+        byte m = 10; // byte holds around 127
+
+        // Post fix
+        byte n = m++; // both m and n are updated, n will just save the value of m before it was
+                      // incremented
+        System.out.println(n);
+        // In this case, first the value of m is copied to n and then it is incremented
+        // result will be 10, then one will increment after the print so it won't show
+        System.out.println(m); // now this became 11
+
+        // Pre fix
+        byte o = ++m; // m is 11 now
+        // the value of m will first be incremented and then saved
+        System.out.println(o);
+        System.out.println(m);
+        // Result will be 12 cuz the value of m is already incremented to 11 from post
+        // fix
+
+        // since n used the post fix so that value of m was saved to n first, and then m
+        // was incremented that is why n is not 11 but just 10
+        System.out.println(n);
     }
 }
