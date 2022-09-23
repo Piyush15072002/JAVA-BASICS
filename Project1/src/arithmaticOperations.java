@@ -1,6 +1,8 @@
 public class arithmaticOperations {
     public static void main(String[] args) throws Exception {
 
+        // byte < short < int < long
+
         // addition
 
         int add = 100 + 303403;
@@ -70,5 +72,34 @@ public class arithmaticOperations {
         // since n used the post fix so that value of m was saved to n first, and then m
         // was incremented that is why n is not 11 but just 10
         System.out.println(n);
+
+        // ! Implicit and Explicit casting
+
+        // when we have a smaller dataype say short and then we upgrade it to int, this
+        // happens automatically so this type of automatic conversion from smaller to
+        // bigger datatypes is called as Implicit casting
+
+        short low = 3;
+
+        int high = low + 2;
+        // see the 2, it is converted as int automatically and the low as well since int
+        // is bigger than the short
+
+        // However, what if you want to degrade the datatype? eg make int to short
+        // or double to int
+
+        double d = 30.03;
+
+        // int e = d + 1;
+        // now this will gives us error since result should be integer but there is a
+        // double term, which will give double output,
+        // in this case, we will have to manually convert the datatype of double in
+        // order to match the int, this is called Explicit Casting when the developer
+        // has to upgrade the datatype on his own to match the result
+
+        int e = (int) d + 1;
+
+        // ! Parsing
+
     }
 }
