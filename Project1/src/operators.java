@@ -9,5 +9,6 @@ public class operators {
         boolean isNormal = temp == 24 || temp == 25;
 
         System.out.println(isNormal);
+
     }
 }
