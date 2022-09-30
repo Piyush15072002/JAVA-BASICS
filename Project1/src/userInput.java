@@ -46,5 +46,15 @@ public class userInput {
 
         System.out.println(fullName);
 
+        // In case someone added too many spaces, then u can trim it
+
+        Scanner input4 = new Scanner(System.in);
+
+        System.out.print("Enter your Full Name again please : ");
+
+        String full = input4.nextLine().trim(); // this will remove extra spaces at the ends of string
+
+        System.out.println(full);
+
     }
 }
