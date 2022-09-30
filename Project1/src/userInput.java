@@ -34,5 +34,17 @@ public class userInput {
 
         System.out.println("Welcome " + name);
 
+        // but there is still one problem, if you use the Next() then it just takes one
+        // unit, means if u wanna add your full name using the spaces, it will not
+        // accept, so there is another way to take any string
+
+        Scanner input3 = new Scanner(System.in);
+
+        System.out.print("Enter your Full Name : ");
+
+        String fullName = input3.nextLine(); // it takes any amount of String
+
+        System.out.println(fullName);
+
     }
 }
