@@ -19,5 +19,20 @@ public class userInput {
 
         System.out.println("Your age is " + age);
 
+        // How will you put labels?
+        // if you use the println, it will take u to the next terminal, so just use the
+        // print keyword that will keep you in the same line
+
+        Scanner input2 = new Scanner(System.in);
+
+        // here we will add the label
+
+        System.out.print("Enter your name : ");
+
+        // next() is for String input
+        String name = input2.next();
+
+        System.out.println("Welcome " + name);
+
     }
 }
