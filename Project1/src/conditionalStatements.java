@@ -35,6 +35,10 @@ public class conditionalStatements {
                 System.out.println("3rd");
                 break;
 
+            default:
+                System.out.println("Soldier");
+
         }
+
     }
 }
