@@ -43,5 +43,18 @@ class Fighter {
 public class OOP1 {
     public static void main(String[] args) {
 
+        // Here we will create the objects for our class
+
+        Fighter fighter = new Fighter(); // new fighter object created
+
+        fighter.name = "Son Goku";
+        fighter.speed = 96;
+        fighter.powerLevel = 97;
+
+        fighter.fight();
+        fighter.attack();
+        fighter.defend();
+
+        System.out.println(fighter);
     }
 }
