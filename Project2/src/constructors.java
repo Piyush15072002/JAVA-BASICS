@@ -37,18 +37,18 @@ class Universe7 {
     int power;
     String rank;
 
-    // Parameterized constructor
-    // we can initialize our own values as we declare a new object
-
-    Universe7(String name, String rank, int power) { // this is a constructor
-        System.out.println("New person added to Universe 7");
-    }
-
     public void info() {
 
         System.out.println(
                 "Name : " + this.name + " ; " + "Rank : " + this.rank + " ; " + "Power : " + this.power + " ; ");
 
+    }
+
+    // Parameterized constructor
+    // we can initialize our own values as we declare a new object
+
+    Universe7(String name, String rank, int power) { // this is a constructor
+        System.out.println("New person added to Universe 7");
     }
 
 }
