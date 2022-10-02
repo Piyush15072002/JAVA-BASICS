@@ -4,8 +4,9 @@
 // there are 3 types of constructors
 // 1. Non-parameterized constructors
 // 2. Parameterized constructors
-// 3.
+// 3. Copy Constructor
 
+//! Non Parameterized constructors
 class Universe6 {
 
     String name;
@@ -21,7 +22,7 @@ class Universe6 {
 
     // Non parameterized constructor
 
-    Universe6() { // this is a constructor
+    Universe6() { // Since there is no return type for constructors, so it is written straight
         System.out.println("New person added to Universe 6");
     }
 
@@ -31,6 +32,7 @@ class Universe6 {
 
 }
 
+// ! Parameterized constructors
 class Universe7 {
 
     String name;
@@ -47,7 +49,7 @@ class Universe7 {
     // Parameterized constructor
     // we can initialize our own values as we declare a new object
 
-    Universe7(String name, String rank, int power) { // this is a constructor
+    Universe7(String name, String rank, int power) { // Passing Parameter
 
         this.name = name;
         this.rank = rank;
@@ -56,6 +58,50 @@ class Universe7 {
         System.out.println("New person added to Universe 7");
     }
 
+    // ! Copy constructor
+
+    // Copy constructor just copy an object and paste it in new object as its
+    // initial value
+    // just like for Parameterized constructors, we initialize them with a value
+    // passed as parameters, but what if you want to copy an object and start its
+    // value from there, then you use copy constructors
+
+    Universe7(Universe7 participant) {
+
+        // The passed parameter is the data type of an Object so it is Universe7
+
+        this.name = participant.name;
+        this.rank = participant.rank;
+        this.power = participant.power;
+
+        System.out.println("New Participant added!");
+    }
+
+}
+
+class Tournament {
+
+    String name;
+    String rank;
+    int power;
+
+    public void info() {
+
+        System.out.println(
+                "Name : " + this.name + " ; " + "Rank : " + this.rank + " ; " + "Power : " + this.power + " ; ");
+
+    }
+
+    Tournament(Tournament participant) {
+        // Tournament <name> is the type of declaration, which is an object of class
+
+        this.name = participant.name;
+        this.rank = participant.rank;
+        this.power = participant.power;
+
+        System.out.println("Participant is added");
+
+    }
 }
 
 public class constructors {
@@ -70,6 +116,7 @@ public class constructors {
         // Constructors do not have any return type ( like int, float, etc)
         // For an object, the constructor can execute only one time
 
+        // Non Parameterized constructors
         U6_person1.name = "Lord Champa";
         U6_person1.power = 79;
         U6_person1.rank = "God of Destruction";
@@ -81,6 +128,12 @@ public class constructors {
         Universe7 U7_person1 = new Universe7("Beerus", "God of Destruction", 87);
 
         U7_person1.info();
+
+        // Calling Copy constructor of Tournament class
+
+        Universe7 U7_person2 = new Universe7(U7_person1);
+
+        U7_person2.info();
 
     }
 
