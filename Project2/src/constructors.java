@@ -9,8 +9,8 @@
 class Universe6 {
 
     String name;
-    int power;
     String rank;
+    int power;
 
     public void info() {
 
@@ -34,8 +34,8 @@ class Universe6 {
 class Universe7 {
 
     String name;
-    int power;
     String rank;
+    int power;
 
     public void info() {
 
@@ -48,6 +48,11 @@ class Universe7 {
     // we can initialize our own values as we declare a new object
 
     Universe7(String name, String rank, int power) { // this is a constructor
+
+        this.name = name;
+        this.rank = rank;
+        this.power = power;
+
         System.out.println("New person added to Universe 7");
     }
 
