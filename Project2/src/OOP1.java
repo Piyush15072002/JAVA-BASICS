@@ -23,16 +23,26 @@ class Fighter {
 
     // * Methods
 
-    public static void fight() {
+    public void fight() {
         System.out.println("Fighting...");
     }
 
-    public static void attack() {
+    public void attack() {
         System.out.println("Attack...");
     }
 
-    public static void defend() {
+    public void defend() {
         System.out.println("Defend...");
+    }
+
+    public float fighterScore() {
+
+        // THIS keyword - it refers to the object
+
+        float score = ((float) (this.speed + this.powerLevel) / 200) * 100;
+        // float score = (float) (this.speed / 100) * 100;
+
+        return score;
     }
 
 }
@@ -45,16 +55,19 @@ public class OOP1 {
 
         // Here we will create the objects for our class
 
-        Fighter fighter = new Fighter(); // new fighter object created
+        Fighter fighter1 = new Fighter(); // new fighter object created
 
-        fighter.name = "Son Goku";
-        fighter.speed = 96;
-        fighter.powerLevel = 97;
+        fighter1.name = "Son Goku";
+        fighter1.speed = 96;
+        fighter1.powerLevel = 97;
 
-        fighter.fight();
-        fighter.attack();
-        fighter.defend();
+        fighter1.fight();
+        fighter1.attack();
+        fighter1.defend();
 
-        System.out.println(fighter);
+        System.out.println(fighter1);
+
+        System.out.println(fighter1.name + "'s score is " + fighter1.fighterScore());
+
     }
 }
