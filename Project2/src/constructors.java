@@ -138,3 +138,8 @@ public class constructors {
     }
 
 }
+
+// There are destructors in JAVA, which does the work of destroying the objects
+// and save memory
+// however, in java, it already have automatic destructors so we don't have to
+// write code separately as it detects unused objects on its own and delete them
