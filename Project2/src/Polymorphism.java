@@ -30,6 +30,15 @@ class Car {
     // when a class have many methods with same name but different parameters, it is
     // called as method overloading
 
+    // * There are some rules to implement method overloading
+    // 1. If the names of functions are same, the PARAMETER types should be
+    // different
+    // 2. if the parameters are same type, then the RETURN TYPE should be different
+    // like void, int
+    // 3. If both are same, then the number of parameters should be different
+
+    // Compile time polymorphism means that the errors are detected while compiling
+
     // Constructor
     Car(String name, int price) {
         this.name = name;
