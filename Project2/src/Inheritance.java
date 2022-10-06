@@ -13,10 +13,10 @@ class School {
 
     // Constructor
 
-    School(String schoolName, int fees) {
-        super(schoolName, fees);
+    School() {
         // this.schoolName = schoolName;
         // this.fees = fees;
+        System.out.println("Created School");
 
     }
 
@@ -38,7 +38,6 @@ class School {
 class Student extends School {
 
     String studentName;
-
     int standard;
 
     public void info() {
@@ -59,9 +58,10 @@ public class Inheritance {
     public static void main(String[] args) throws Exception {
 
         // class School (parent class)
-        School school1 = new School("KV Devlali", 1000);
-        System.out.println(school1.schoolName);
-        System.out.println(school1.fees);
+
+        School school1 = new School();
+        // System.out.println(school1.schoolName);
+        // System.out.println(school1.fees);
 
         // class Student (child class) - Single Inheritance
         Student student1 = new Student("Piyush Pant", 12);
