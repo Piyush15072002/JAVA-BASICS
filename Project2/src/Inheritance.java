@@ -14,9 +14,10 @@ class School {
     // Constructor
 
     School(String schoolName, int fees) {
-        this.schoolName = name;
-        this.fees = fees;
-        System.out.println("School Created");
+        super(schoolName, fees);
+        // this.schoolName = schoolName;
+        // this.fees = fees;
+
     }
 
 }
@@ -29,11 +30,16 @@ class School {
 // There is another type called as "Multi Intheritence", but java does not
 // support it
 
+// Note that, the keyword EXTENDS is used to extend the class and perform
+// INHERITANCE8
+
 // Single level Inheritance
 
-class student {
+class Student extends School {
 
-    String studentName;int class;
+    String studentName;
+
+    int standard;
 
     public void info() {
         System.out.println("Info Loading...");
@@ -41,27 +47,24 @@ class student {
 
     // Constructor
 
-    Student(String studentName, int class){
+    Student(String studentName, int standard) {
         this.studentName = studentName;
-        this.class = class;
-        System.out.println("Student Created");
+        this.standard = standard;
     }
-
 
 }
 
 public class Inheritance {
+
     public static void main(String[] args) throws Exception {
 
         // class School (parent class)
         School school1 = new School("KV Devlali", 1000);
-        System.out.println();
-        // class Student (child class)  - Single Inheritance
+        System.out.println(school1.schoolName);
+        System.out.println(school1.fees);
 
+        // class Student (child class) - Single Inheritance
         Student student1 = new Student("Piyush Pant", 12);
-
-
-
 
     }
 }
