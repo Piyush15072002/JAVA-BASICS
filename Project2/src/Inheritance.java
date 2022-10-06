@@ -56,7 +56,19 @@ class Course extends Student {
     // this is called as METHOD OVERRIDING
 
     public void info() {
-        System.out.println(this.studentName);
+        System.out.println("School > Student > Course");
+    }
+
+}
+
+// Heirarchical Inheritance
+
+class Teacher extends School {
+
+    String teacherName;
+
+    public void teach() {
+        System.out.println("Teaching...");
     }
 
 }
@@ -85,5 +97,22 @@ public class Inheritance {
 
         student1.end();
 
+        // Class Course (child class of Student) - multi-level Inheritance
+
+        Course course1 = new Course();
+        course1.courseName = "Artificial Intelligence";
+
+        course1.info();
+
+        course1.end(); // School Class function
+
+        // Class Teacher (child class of School) - Heirarchical Inheritance
+
+        Teacher teacher1 = new Teacher();
+
+        teacher1.teacherName = "Goku";
+        teacher1.teach();
+
+        teacher1.end();
     }
 }
