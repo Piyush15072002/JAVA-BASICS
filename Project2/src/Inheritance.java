@@ -1,6 +1,6 @@
 class School {
 
-    String name;
+    String schoolName;
     int fees;
 
     public void start() {
@@ -13,12 +13,22 @@ class School {
 
     // Constructor
 
-    School(String name, int fees) {
-        this.name = name;
+    School(String schoolName, int fees) {
+        this.schoolName = name;
         this.fees = fees;
     }
 
 }
+
+// * There are 3 types of Inheritance
+// 1. Single Inheritance
+// 2. Multi-level inheritance
+// 3. Heirarchical Inheritance
+
+// There is another type called as "Multi Intheritence", but java does not
+// support it
+
+// Single level Inheritance
 
 public class Inheritance {
     public static void main(String[] args) throws Exception {
