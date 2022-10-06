@@ -16,6 +16,7 @@ class School {
     School(String schoolName, int fees) {
         this.schoolName = name;
         this.fees = fees;
+        System.out.println("School Created");
     }
 
 }
@@ -30,8 +31,37 @@ class School {
 
 // Single level Inheritance
 
+class student {
+
+    String studentName;int class;
+
+    public void info() {
+        System.out.println("Info Loading...");
+    }
+
+    // Constructor
+
+    Student(String studentName, int class){
+        this.studentName = studentName;
+        this.class = class;
+        System.out.println("Student Created");
+    }
+
+
+}
+
 public class Inheritance {
     public static void main(String[] args) throws Exception {
+
+        // class School (parent class)
+        School school1 = new School("KV Devlali", 1000);
+        System.out.println();
+        // class Student (child class)  - Single Inheritance
+
+        Student student1 = new Student("Piyush Pant", 12);
+
+
+
 
     }
 }
