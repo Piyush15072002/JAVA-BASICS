@@ -17,22 +17,46 @@ class MachineLearning {
 
 }
 
-// class SupervisedLearning extends MachineLearning {
+class SupervisedLearning extends MachineLearning {
+    String modelType; // Regression or classification
 
-// }
+    public void algorithm(String modelType) {
+        if ((modelType == "regression") || (modelType == "Regression")) {
+            System.out.println("Apply Linear Regression");
+        } else if ((modelType == "classification") || (modelType == "Classification")) {
+            System.out.println("Apply ANN, SVM, or Logistic Regression");
+        } else {
+            System.out.println("Wrong model type");
+        }
+    }
 
-// class UnsupervisedLearning extends MachineLearning {
+}
 
-// }
+class UnsupervisedLearning extends MachineLearning {
+    String modelType; // Clustering or non clustering
+
+    public void algorithm(String modelType) {
+        if ((modelType == "clustering") || (modelType == "Clustering")) {
+            System.out.println("Apply K-Means");
+        } else if ((modelType == "nonClustering") || (modelType == "nonclustering")) {
+            System.out.println("Still learning...so no idea about which algorithm to use");
+        } else {
+            System.out.println("Wrong model type");
+        }
+    }
+}
 
 public class Practice {
     public static void main(String[] args) throws Exception {
 
         MachineLearning data1 = new MachineLearning();
+        MachineLearning data2 = new MachineLearning();
 
         data1.dataType = "Labeled";
+        data2.dataType = "unlabeled";
 
         data1.modelSelection(data1.dataType);
+        data1.modelSelection(data2.dataType);
 
     }
 }
