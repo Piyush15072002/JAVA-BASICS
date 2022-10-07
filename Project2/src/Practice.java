@@ -58,5 +58,23 @@ public class Practice {
         data1.modelSelection(data1.dataType);
         data1.modelSelection(data2.dataType);
 
+        SupervisedLearning sl1 = new SupervisedLearning();
+        SupervisedLearning sl2 = new SupervisedLearning();
+
+        sl1.modelType = "regression";
+        sl2.modelType = "classification";
+
+        sl1.algorithm(sl1.modelType);
+        sl1.algorithm(sl2.modelType);
+
+        UnsupervisedLearning ul1 = new UnsupervisedLearning();
+        UnsupervisedLearning ul2 = new UnsupervisedLearning();
+
+        ul1.modelType = "Clustering";
+        ul2.modelType = "nonclustering";
+
+        ul1.algorithm(ul1.modelType);
+        ul2.algorithm(ul2.modelType);
+
     }
 }
