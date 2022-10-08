@@ -7,11 +7,18 @@ class Fighters {
 
     String[] fighters = { "Son Goku", "Prince Vegeta", "Son Gohan", "Lord Frieza", "Majin Buu", "Legendary Broly" };
 
-    public void chooseFigther() {
+    public String chooseFigther() {
 
         // remember that the random gives a double value so type cast it to the INT
-        double num = Math.random();
-        System.out.println(num);
+        int num = (int) (Math.floor((Math.random() * 6))); // since there are 6 fighters
+
+        // now use that number to choose a random char from array
+
+        String chosenFighter = fighters[num];
+
+        System.out.println(chosenFighter);
+
+        return chosenFighter;
 
     }
 
@@ -22,7 +29,9 @@ public class myPackages {
 
         Fighters myFighter = new Fighters();
 
-        myFighter.chooseFigther();
+        String fighter = myFighter.chooseFigther();
+
+        System.out.println(fighter);
 
     }
 }
