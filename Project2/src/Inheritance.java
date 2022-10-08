@@ -13,13 +13,15 @@ class School {
 
 }
 
-// * There are 3 types of Inheritance
+// * There are 4 types of Inheritance (5 In C++)
 // 1. Single Inheritance
 // 2. Multi-level inheritance
 // 3. Heirarchical Inheritance
+// 4. Hybrid inheritance (Combination of above 3)
 
-// There is another type called as "Multi Intheritence", but java does not
-// support it
+// The 5th type is called as "Multiple Intheritence", but java does not
+// support it, it is present in C++, but to use it in JAVA, we can use the
+// INTERFACES
 
 // Note that, the keyword EXTENDS is used to extend the class and perform
 // INHERITANCE
