@@ -1,11 +1,13 @@
 // Here we will define our own packages and import them to use
 
-package myPackages;
+package Test;
 
 // random class
 import java.lang.Math;
 
-class Fighters {
+public class myPackages {
+
+    public static void main(String[] args){
 
     String[] fighters = { "Son Goku", "Prince Vegeta", "Son Gohan", "Lord Frieza", "Majin Buu", "Legendary Broly" };
 
@@ -23,6 +25,7 @@ class Fighters {
         return chosenFighter;
 
     }
+}
 
 }
 
