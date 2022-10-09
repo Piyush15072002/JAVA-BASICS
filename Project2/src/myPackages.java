@@ -1,5 +1,7 @@
 // Here we will define our own packages and import them to use
 
+package myPackages;
+
 // random class
 import java.lang.Math;
 
@@ -24,14 +26,14 @@ class Fighters {
 
 }
 
-public class myPackages {
-    public static void main(String[] args) {
+// public class myPackages {
+// public static void main(String[] args) {
 
-        Fighters myFighter = new Fighters();
+// Fighters myFighter = new Fighters();
 
-        String fighter = myFighter.chooseFigther();
+// String fighter = myFighter.chooseFigther();
 
-        System.out.println(fighter);
+// System.out.println(fighter);
 
-    }
-}
+// }
+// }
