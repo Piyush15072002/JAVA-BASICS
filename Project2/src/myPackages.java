@@ -1,5 +1,6 @@
 // Here we will define our own packages and import them to use
 
+// There is an error, see to it later
 package Test;
 
 // random class
