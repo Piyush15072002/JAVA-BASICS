@@ -46,7 +46,7 @@ public class Encapsulation {
         System.out.println(d1.id);
 
         // Protected
-        d1.setPassword("P1IsMine");
+        d1.setPassword("P1IsMine"); 
         System.out.println(d1.getPassword());
 
     }
