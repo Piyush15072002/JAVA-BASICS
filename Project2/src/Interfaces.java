@@ -5,6 +5,8 @@
 
 interface Button {
 
+    String color = "black";
+
     void click();
 
     void submit();
@@ -17,6 +19,8 @@ interface Button {
 // We cannot create objects or instantiate the Interfaces
 
 interface navButton extends Button {
+
+    String border = "2px";
 
     void Home();
 
@@ -36,6 +40,14 @@ class Navbar implements Button {
         System.out.println("Form submitted successfully");
     }
 
+    public void Home() {
+        System.out.println("Redirecting to home route");
+    }
+
+    public void contact() {
+        System.out.println("Redirecting to contact route");
+    }
+
 }
 
 public class Interfaces {
@@ -47,6 +59,13 @@ public class Interfaces {
         login.click();
 
         login.submit();
+
+        Navbar url = new Navbar();
+
+        url.Home();
+        url.contact();
+
+        System.out.println(url.color);
 
     }
 
