@@ -18,15 +18,35 @@ interface Button {
 
 interface navButton extends Button {
 
+    void Home();
+
+    void contact();
+
 }
 
 class Navbar implements Button {
+
+    String webName = "DB Universe";
+
+    public void click() {
+        System.out.println("Clicked on Button");
+    };
+
+    public void submit() {
+        System.out.println("Form submitted successfully");
+    }
 
 }
 
 public class Interfaces {
 
     public static void main(String[] args) {
+
+        Navbar login = new Navbar();
+
+        login.click();
+
+        login.submit();
 
     }
 
