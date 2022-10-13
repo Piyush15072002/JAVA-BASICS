@@ -5,7 +5,7 @@
 
 interface Button {
 
-    String color = "black";
+    String color = "Green";
 
     void click();
 
@@ -18,9 +18,9 @@ interface Button {
 
 // We cannot create objects or instantiate the Interfaces
 
-interface navButton {
+interface navButton extends Button {
 
-    String border = "2px";
+    String border = "1px";
 
     void Home();
 
@@ -30,7 +30,7 @@ interface navButton {
 
 class Web implements Button {
 
-    String webName = "DB Universe";
+    String color = "Black";
 
     public void click() {
         System.out.println("Clicked on Button");
@@ -43,6 +43,9 @@ class Web implements Button {
 }
 
 class Navbar implements navButton {
+
+    String border = "2px";
+    String color = "Red";
 
     public void Home() {
         System.out.println("Redirecting to home route");
@@ -67,8 +70,6 @@ public class Interfaces {
         Web url = new Web();
 
         System.out.println(url.color);
-
-        System.out.println(url.webName);
 
         Navbar b1 = new Navbar();
 
