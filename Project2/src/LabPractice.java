@@ -34,6 +34,8 @@ public class LabPractice {
         a.rank();
         a.name();
 
+        System.out.println(a.id);
+
     }
 
 }
