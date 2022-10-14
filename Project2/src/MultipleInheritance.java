@@ -1,4 +1,4 @@
-// Multi-level Inheritance
+// Multiple Inheritance
 
 interface Person {
 
@@ -8,13 +8,15 @@ interface Person {
 
 }
 
-interface Department extends Person {
+interface Department {
 
     void rank();
 
+    int depId = 10;
+
 }
 
-class Organization implements Department {
+class Organization implements Person, Department {
 
     public void rank() {
         System.out.println("Authorized");
@@ -26,9 +28,9 @@ class Organization implements Department {
 
 }
 
-public class LabPractice {
+public class MultipleInheritance {
 
-    public static void main(String args[]) throws Exception {
+    public static void main(String[] args) throws Exception {
 
         Organization a = new Organization();
 
@@ -36,6 +38,7 @@ public class LabPractice {
         a.name();
 
         System.out.println(a.id);
+        System.out.println(a.depId);
 
     }
 
