@@ -18,7 +18,7 @@ interface Button {
 
 // We cannot create objects or instantiate the Interfaces
 
-interface navButton extends Button {
+interface NavButton extends Button {
 
     String border = "1px";
 
@@ -42,20 +42,20 @@ class Web implements Button {
 
 }
 
-class Navbar implements navButton {
+// class Navbar implements navButton {
 
-    String border = "2px";
-    String color = "Red";
+// String border = "2px";
+// String color = "Red";
 
-    public void Home() {
-        System.out.println("Redirecting to home route");
-    }
+// public void Home() {
+// System.out.println("Redirecting to home route");
+// }
 
-    public void contact() {
-        System.out.println("Redirecting to contact route");
-    }
+// public void contact() {
+// System.out.println("Redirecting to contact route");
+// }
 
-}
+// }
 
 public class Interfaces {
 
@@ -67,16 +67,14 @@ public class Interfaces {
 
         login.submit();
 
-        Web url = new Web();
+        // login.home();
 
-        System.out.println(url.color);
+        // login.contact();
 
-        Navbar b1 = new Navbar();
+        // Web url = new Web();
 
-        b1.Home();
-        b1.contact();
-        // System.out.println(b1.color); // this is from the button interface
-        System.out.println(b1.border);
+        // System.out.println(url.color);
+
     }
 
 }
