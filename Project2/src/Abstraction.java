@@ -7,7 +7,7 @@ abstract class Bank {
     // and just delcare them
     String id;
 
-    abstract public void withdrawMoney();
+    abstract void withdrawMoney();
 
 }
 
