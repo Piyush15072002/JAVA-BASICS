@@ -15,7 +15,7 @@ class Database {
     public String id;
 
     // No one can access it
-    private String password; // even when we create object, they cannot see it or use it
+    private String password = "this is protected"; // even when we create object, they cannot see it or use it
 
     // To access the private things, we use the GETTERS AND SETTERS
 
@@ -46,7 +46,8 @@ public class Encapsulation {
         System.out.println(d1.id);
 
         // Protected
-        d1.setPassword("P1IsMine"); 
+        System.out.println(d1.getPassword());
+        d1.setPassword("P1IsMine");
         System.out.println(d1.getPassword());
 
     }
