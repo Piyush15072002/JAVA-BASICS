@@ -42,7 +42,8 @@ public class Exceptions {
         // File("C:\\Users\\ACER\\Desktop\\JAVA\\Project2\\src\\myFile.txt");
 
         try {
-            File myFile = new File("myFile.txt");
+            File myFile = new File("myFile.txt"); // Correct File
+            // File myFile = new File("myFiless.txt"); // Wrong file for exception
 
             Scanner myReader = new Scanner(myFile);
 
