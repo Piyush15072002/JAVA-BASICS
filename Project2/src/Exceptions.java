@@ -1,3 +1,7 @@
+import java.io.File; // Import the File class
+import java.io.FileNotFoundException; // Import this class to handle errors
+import java.util.Scanner; // Import the Scanner class to read text files
+
 public class Exceptions {
     public static void main(String[] args) {
 
@@ -34,6 +38,23 @@ public class Exceptions {
         }
 
         // Now we will see exception when we read a file tht does not exist
+
+        // File("C:\\Users\\ACER\\Desktop\\JAVA\\Project2\\src\\myFile.txt");
+
+        try {
+            File myFile = new File("myFile.txt");
+
+            Scanner myReader = new Scanner(myFile);
+
+            while (myReader.hasNextLine()) {
+                String data = myReader.nextLine();
+                System.out.println(data);
+            }
+
+            myReader.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("File is not found : " + e.getMessage());
+        }
 
     }
 }
