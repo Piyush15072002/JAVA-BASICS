@@ -33,5 +33,7 @@ public class Exceptions {
             System.out.println("Array does not have enough space : " + e.getMessage());
         }
 
+        // Now we will see exception when we read a file tht does not exist
+
     }
 }
