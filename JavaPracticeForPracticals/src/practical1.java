@@ -29,6 +29,8 @@ public class practical1 {
         } else {
             System.out.println("Fail");
         }
+
+        marks.close();
     }
 
 }
