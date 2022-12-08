@@ -18,7 +18,7 @@ public class practical1 {
 
         float percentage = (float) (total / 500) * 100;
 
-        System.out.println("Your percentage is : " + percentage);
+        System.out.println("Your p isrcentage is : " + percentage);
 
         if (percentage >= 90) {
             System.out.println("A");
