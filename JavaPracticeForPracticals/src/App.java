@@ -1,4 +1,4 @@
-// package mypackage;
+package com.foo.mypackage;
 
 public class App {
 
