@@ -1,5 +1,14 @@
+// package mypackage;
+
 public class App {
-    public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+
+    public void run() {
+        System.out.println("Run the File");
     }
+
+    public static void main(String[] args) throws Exception {
+        App myApp = new App();
+        myApp.run();
+    }
+
 }
